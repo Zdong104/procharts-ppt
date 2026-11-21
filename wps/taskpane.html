@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>ProCharts</title>
+  <link rel="stylesheet" href="app.b854bf19bd.css">
+</head>
+<body>
+<div id="app">
+  <header class="pc-head">
+    <button type="button" class="pc-type-btn" id="type-btn" aria-haspopup="dialog" disabled>
+      <span class="pc-type-thumb" id="type-thumb" hidden></span>
+      <span class="pc-type-text"><span class="title" id="title">Add to the slide</span><span class="subtitle" id="subtitle">Charts and elements, with sample data</span></span>
+      <span class="pc-type-chev" id="type-chev" hidden></span>
+    </button>
+    <div class="pc-head-actions">
+      <button type="button" class="pc-icon-btn" id="preview-toggle" hidden></button>
+      <button type="button" class="pc-btn pc-btn-ghost" id="btn-new" title="Insert another chart or element" data-i18n-attr="title" hidden></button>
+      <button type="button" class="pc-icon-btn" id="btn-license"></button>
+    </div>
+  </header>
+  <div class="license-note" id="license-note" role="status" hidden></div>
+
+  <section class="view" id="view-gallery">
+    <p class="intro" data-i18n>Click one to insert it. To edit a chart that is already there, select it on the slide.</p>
+    <label class="pc-toggle fit" id="fit-wrap" hidden><input type="checkbox" id="fit" class="pc-switch"><span data-i18n>Fit into the selected shape</span></label>
+    <div class="gallery-filter"><input type="text" id="gallery-filter" class="form-control" placeholder="Filter by name or description" aria-label="Filter charts, ready-made charts and elements" data-i18n-attr="placeholder aria-label" autocomplete="off" spellcheck="false"></div>
+    <div class="gallery" id="gallery"></div>
+    <p class="gallery-none" id="gallery-none" data-i18n hidden>Nothing matches. Try another word.</p>
+  </section>
+
+  <section class="view" id="view-edit" hidden>
+    <div class="preview-wrap" id="preview-wrap"><div class="preview-card"><div id="preview" class="preview"></div></div></div>
+    <div class="warnings" id="warnings" role="status"></div>
+    <div class="quickbar" id="quickbar" role="toolbar" aria-label="Quick settings" data-i18n-attr="aria-label"></div>
+    <nav class="tabs" role="tablist">
+      <button type="button" id="tab-btn-data" class="tab-btn active" role="tab" data-i18n>Data</button>
+      <button type="button" id="tab-btn-options" class="tab-btn" role="tab" data-i18n>Options</button>
+      <button type="button" id="tab-btn-decorations" class="tab-btn" role="tab" data-i18n>Decorations<span class="tab-count" id="deco-count"></span></button>
+    </nav>
+    <div class="tab tab-data" id="tab-data" role="tabpanel">
+      <div id="tab-sheet" class="sheet-root"></div>
+    </div>
+    <div class="tab" id="tab-options" role="tabpanel" hidden><div id="options"></div><div id="series-options" hidden></div></div>
+    <div class="tab" id="tab-decorations" role="tabpanel" hidden></div>
+  </section>
+
+  <footer class="footer">
+    <div class="status" id="status" role="status" aria-live="polite"></div>
+    <div class="footer-row" id="footer-row">
+      <label class="pc-toggle auto" id="auto-wrap" title="Update the slide automatically after each edit" data-i18n-attr="title"><input type="checkbox" id="auto" class="pc-switch" checked><span data-i18n>Auto-apply</span></label>
+      <button type="button" class="pc-btn" id="btn-copy" title="Insert a copy of this chart on the current slide" data-i18n-attr="title" data-i18n>Insert copy</button>
+      <button type="button" class="pc-btn pc-btn-primary" id="btn-apply">Apply</button>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="app.78e00c6bb7.js"></script>
+</body>
+</html>

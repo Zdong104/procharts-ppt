@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JsPlugin>
+  <ApiVersion>1.0.0</ApiVersion>
+  <Name>procharts</Name>
+  <Description>ProCharts: business charts (waterfall, stacked, Mekko, Gantt, pie ...) drawn as native, editable shapes.</Description>
+</JsPlugin>

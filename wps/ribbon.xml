@@ -1,0 +1,12 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnAddinLoad">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="pcTab" label="ProCharts">
+        <group id="pcGroup" getLabel="GetLabel">
+          <button id="pcInsert" getLabel="GetLabel" getScreentip="GetScreentip" onAction="OnAction" getImage="GetImage" size="large"/>
+          <button id="pcLicense" getLabel="GetLabel" getScreentip="GetScreentip" onAction="OnAction" getImage="GetImage" size="large"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>

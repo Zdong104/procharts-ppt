@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProCharts: Save / Email Slides</title>
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <style>body{margin:0;padding:16px 18px;background:#fff;color:#323130;font:14px/1.45 "Segoe UI",-apple-system,Roboto,Arial,sans-serif}h1{margin:0 0 10px;font-size:18px;font-weight:600}#pc-file{margin:0 0 8px;padding:6px 8px;background:#f3f2f1;border-radius:2px;word-break:break-all}#pc-status{margin:0 0 10px;min-height:1.4em}#pc-hint{margin:0 0 12px;font-size:13px;color:#605e5c}.pc-actions{display:flex;flex-wrap:wrap;gap:8px}button{min-width:96px;padding:6px 14px;font:inherit;border:1px solid #8a8886;border-radius:2px;background:#fff;color:#323130;cursor:pointer}button:hover{background:#f3f2f1}button.pc-primary{background:#c43e1c;border-color:#c43e1c;color:#fff}button.pc-primary:hover{background:#a4371a}[hidden]{display:none!important}</style>
+</head>
+<body>
+  <h1 id="pc-title">Save Slides</h1>
+  <p id="pc-file" hidden></p>
+  <p id="pc-status" role="status" aria-live="polite"></p>
+  <p id="pc-hint" hidden></p>
+  <div class="pc-actions">
+    <button id="pc-save-as" class="pc-primary" hidden>Save As…</button>
+    <button id="pc-retry" class="pc-primary" hidden>Try again</button>
+    <button id="pc-download" hidden>Save to Downloads</button>
+    <button id="pc-close">Close</button>
+  </div>
+  <script type="text/javascript" src="slides-dialog.e05b771883.js"></script>
+  <script>ProCharts.pptSlidesDialog.boot(window);</script>
+</body>
+</html>
